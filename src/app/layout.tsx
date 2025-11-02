@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css"; // Your Tailwind global styles
 import { Footer } from "@/components/Footer";
-
+import { Navbar } from '@/components/Navbar';
 // 2. Configure the font loader
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -25,6 +25,7 @@ export default function RootLayout({
     // Set a default background/text color for the entire app using Tailwind
     <html lang="en" className={`${inter.variable} bg-gray-50 text-gray-900`}>
       <body>
+        <Navbar />
         {/* 5. Placeholder for the shared structure */}
         {/* 🚨 We will put the Header/Navbar component here later */}
 
